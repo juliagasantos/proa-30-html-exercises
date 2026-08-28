@@ -1263,7 +1263,11 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1285,7 +1289,9 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .media {
+        img,
+        nav,
+        p {
             position: relative;
             z-index: 1;
         }
@@ -1309,24 +1315,42 @@ color: var(--blue);
             margin-bottom: 1em;
         }
 
-        .media {
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 2em;
+            border-radius: 1em;
+        }
+
+        nav {
             display: flex;
-            flex-direction: column;
-            gap: 2em;
+            flex-wrap: wrap;
+            gap: 1em;
+            margin: 1em 0 2em;
 
-            img,
-            video,
-            audio {
-                width: 100%;
-                border-radius: 1em;
-            }
+            a {
+                padding: .8em 1.2em;
+                border-radius: .5em;
+                background-color: var(--bg-card);
+                color: var(--text-primary);
+                transition: background-color .3s ease, color .3s ease;
 
-            img {
-                border: 3px solid var(--primary);
+                &:hover {
+                    background-color: var(--bg-card-light);
+                    color: var(--primary-light);
+                }
             }
+        }
+
+        p {
+            margin: 1em 0;
+            color: var(--text-primary);
+            line-height: 1.6;
         }
     }
 }
+/* End */
 
 /* Exercício 12 */
 #exercise12 {
@@ -1335,7 +1359,11 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1357,7 +1385,7 @@ color: var(--blue);
 
         .voltar,
         h1,
-        nav {
+        p {
             position: relative;
             z-index: 1;
         }
@@ -1381,27 +1409,18 @@ color: var(--blue);
             margin-bottom: 1em;
         }
 
-        nav {
-            display: flex;
-            gap: 1em;
-            flex-wrap: wrap;
+        p {
+            margin: 1em 0;
+            color: var(--text-primary);
+            line-height: 1.6;
 
-            a {
-                padding: .8em 1.5em;
-                background-color: var(--bg-card);
-                color: var(--text-primary);
-                border-radius: .5em;
-                transition: background-color .3s ease, transform .3s ease;
-
-                &:hover {
-                    background-color: var(--primary);
-                    color: var(--text-black);
-                    transform: translateY(-3px);
-                }
+            strong {
+                color: var(--primary-light);
             }
         }
     }
 }
+/* End */
 
 /* Exercício 13 */
 #exercise13 {
@@ -1410,7 +1429,11 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1432,7 +1455,10 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .content {
+        h2,
+        ul,
+        ol,
+        dl {
             position: relative;
             z-index: 1;
         }
@@ -1456,18 +1482,53 @@ color: var(--blue);
             margin-bottom: 1em;
         }
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
+        h2 {
+            color: var(--primary-light);
+            margin: 2em 0 1em;
+        }
 
-            p {
-                color: var(--text-primary);
+        ul,
+        ol {
+            padding-left: 2em;
+            color: var(--text-primary);
+
+            li {
+                margin: .7em 0;
+                line-height: 1.6;
+            }
+        }
+
+        ul {
+            list-style: disc;
+
+            ul {
+                margin-top: .5em;
+                list-style: circle;
+            }
+        }
+
+        ol {
+            list-style: decimal;
+        }
+
+        dl {
+            color: var(--text-primary);
+
+            dt {
+                margin-top: 1em;
+                color: var(--primary-light);
+                font-weight: bold;
+            }
+
+            dd {
+                margin: .5em 0 1em 1.5em;
+                color: var(--text-secondary);
                 line-height: 1.6;
             }
         }
     }
 }
+/* End */
 
 /* Exercício 14 */
 #exercise14 {
@@ -1476,7 +1537,11 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1498,7 +1563,7 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .links {
+        table {
             position: relative;
             z-index: 1;
         }
@@ -1519,26 +1584,41 @@ color: var(--blue);
         h1 {
             color: var(--primary-light);
             font-size: 3em;
+            margin-bottom: 1.5em;
         }
 
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            margin-top: 2em;
+        table {
+    width: 100%;
+    color: var(--text-primary);
+    background-color: var(--bg-card);
+    border-radius: 1em;
+    overflow: hidden;
+    border: 1px solid var(--text-muted);
 
-            a {
-                padding: 1em;
-                background-color: var(--bg-card);
-                color: var(--text-primary);
-                border-radius: .5em;
-                transition: background-color .3s ease;
+    th,
+    td {
+        padding: 1em;
+        text-align: center;
+        border: 1px solid var(--text-muted);
+    }
 
-                &:hover {
-                    background-color: var(--bg-card-light);
-                }
-            }
+    th {
+        background-color: var(--shadow-primary-one);
+        color: var(--primary-light);
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+    }
+
+    td {
+        background-color: var(--bg-card);
+        color: var(--text-primary);
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: var(--bg-card-light);
         }
+    }
+}
     }
 }
 
@@ -1549,7 +1629,11 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1571,7 +1655,7 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .lista {
+        table {
             position: relative;
             z-index: 1;
         }
@@ -1592,17 +1676,39 @@ color: var(--blue);
         h1 {
             color: var(--primary-light);
             font-size: 3em;
+            margin-bottom: 1.5em;
         }
 
-        .lista {
-            margin-top: 2em;
+        table {
+            width: 100%;
+            color: var(--text-primary);
+            background-color: var(--bg-card);
+            border: 1px solid var(--text-muted);
+            border-radius: 1em;
+            overflow: hidden;
 
-            li {
-                margin: .8em 0;
+            th,
+            td {
                 padding: 1em;
+                text-align: center;
+                border: 1px solid var(--text-muted);
+            }
+
+            th {
+                background-color: var(--shadow-primary-one);
+                color: var(--primary-light);
+                font-family: "Ubuntu", sans-serif;
+                font-weight: bold;
+            }
+
+            td {
                 background-color: var(--bg-card);
                 color: var(--text-primary);
-                border-radius: .5em;
+                transition: background-color .3s ease;
+
+                &:hover {
+                    background-color: var(--bg-card-light);
+                }
             }
         }
     }
@@ -1615,7 +1721,13 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(
+            to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)
+        ),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1637,7 +1749,8 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .content {
+        .block,
+        .inline {
             position: relative;
             z-index: 1;
         }
@@ -1658,15 +1771,63 @@ color: var(--blue);
         h1 {
             color: var(--primary-light);
             font-size: 3em;
+            margin-bottom: 1.5em;
         }
 
-        .content {
-            margin-top: 2em;
+        .block,
+        .inline {
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+            background-color: var(--bg-card-transparent);
+            border-radius: 1em;
 
-            p {
-                margin: 1em 0;
-                color: var(--text-primary);
+            h2 {
+                color: var(--primary-light);
+                margin-bottom: 1em;
+            }
+
+            p,
+            div {
+                color: var(--text-secondary);
                 line-height: 1.6;
+            }
+        }
+
+        .block {
+            p {
+                margin-bottom: 1em;
+            }
+
+            div {
+                padding: 1em;
+                background-color: var(--bg-card);
+                border-radius: .5em;
+            }
+        }
+
+        .inline {
+            p {
+                color: var(--text-secondary);
+
+                span,
+                strong,
+                a {
+                    color: var(--text-primary);
+                }
+
+                span {
+                    padding: .2em .5em;
+                    background-color: var(--bg-secondary);
+                    border-radius: .3em;
+                }
+
+                a {
+                    transition: color .3s ease;
+
+                    &:hover {
+                        color: var(--primary-light);
+                    }
+                }
             }
         }
     }
@@ -1679,7 +1840,13 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(
+            to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)
+        ),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1700,8 +1867,10 @@ color: var(--blue);
         }
 
         .voltar,
-        h1,
-        .content {
+        .header,
+        .menu,
+        .content,
+        .footer {
             position: relative;
             z-index: 1;
         }
@@ -1719,30 +1888,75 @@ color: var(--blue);
             }
         }
 
-        h1 {
-            color: var(--primary-light);
-            font-size: 3em;
+        .header {
+            padding: 1.5em;
+            background-color: var(--bg-card-transparent);
+            border-radius: 1em;
+
+            h1 {
+                color: var(--primary-light);
+                font-size: 3em;
+                margin-bottom: .3em;
+            }
+
+            p {
+                color: var(--text-secondary);
+            }
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            margin: 1.5em 0;
+            padding: 1em;
+            background-color: var(--bg-card);
+            border-radius: 1em;
+
+            a {
+                padding: .7em 1.2em;
+                color: var(--text-primary);
+                background-color: var(--bg-secondary);
+                border-radius: .5em;
+                transition: background-color .3s ease, color .3s ease;
+
+                &:hover {
+                    color: var(--text-black);
+                    background-color: var(--bg-muted-transparent);
+                }
+            }
         }
 
         .content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5em;
-            margin-top: 2em;
+            padding: 2em;
+            background-color: var(--bg-card-transparent);
+            border-radius: 1em;
 
-            article {
-                padding: 1.5em;
-                background-color: var(--bg-card);
-                border-radius: 1em;
+            h2 {
+                color: var(--primary-light);
+                margin-bottom: .7em;
+            }
 
-                h2,
-                p {
-                    color: var(--text-primary);
-                }
+            p {
+                color: var(--text-secondary);
+                line-height: 1.6;
+            }
+        }
+
+        .footer {
+            margin-top: 1.5em;
+            padding: 1em;
+            text-align: center;
+            background-color: var(--bg-card);
+            border-radius: 1em;
+
+            p {
+                color: var(--text-muted);
             }
         }
     }
 }
+
 
 /* Exercício 18 */
 #exercise18 {
@@ -1751,7 +1965,13 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(
+            to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)
+        ),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1773,7 +1993,7 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .content {
+        .cards {
             position: relative;
             z-index: 1;
         }
@@ -1794,22 +2014,49 @@ color: var(--blue);
         h1 {
             color: var(--primary-light);
             font-size: 3em;
+            margin-bottom: 1em;
         }
 
-        .content {
-            margin-top: 2em;
-            padding: 1.5em;
-            background-color: var(--bg-card);
-            border-radius: 1em;
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5em;
 
-            p {
-                margin: 1em 0;
-                color: var(--text-primary);
-                line-height: 1.6;
+            .card {
+                padding: 1.5em;
+                background-color: var(--bg-card-transparent);
+                border-radius: 1em;
+                transition: transform .3s ease, background-color .3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    background-color: var(--bg-card);
+                }
+
+                h2 {
+                    color: var(--primary-light);
+                    margin-bottom: .7em;
+                }
+
+                p {
+                    color: var(--text-secondary);
+                    line-height: 1.6;
+                    margin-bottom: 1em;
+                }
+
+                span {
+                    display: inline-block;
+                    padding: .4em .8em;
+                    color: var(--text-primary);
+                    background-color: var(--bg-secondary);
+                    border-radius: .5em;
+                    font-size: .9em;
+                }
             }
         }
     }
 }
+
 
 /* Exercício 19 */
 #exercise19 {
@@ -1818,7 +2065,13 @@ color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-card-transparent) 50%, var(--bg-primary)), url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
+    background: linear-gradient(
+            to bottom,
+            var(--bg-primary),
+            var(--bg-card-transparent) 50%,
+            var(--bg-primary)
+        ),
+        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat;
 
     .container {
         position: relative;
@@ -1840,7 +2093,9 @@ color: var(--blue);
 
         .voltar,
         h1,
-        .content {
+        nav,
+        section,
+        .topo {
             position: relative;
             z-index: 1;
         }
@@ -1861,24 +2116,59 @@ color: var(--blue);
         h1 {
             color: var(--primary-light);
             font-size: 3em;
+            margin-bottom: 1em;
         }
 
-        .content {
+        nav {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             gap: 1em;
-            margin-top: 2em;
+            margin-bottom: 2em;
 
-            section {
-                padding: 1.5em;
+            a {
+                padding: .7em 1.2em;
+                color: var(--text-primary);
                 background-color: var(--bg-card);
-                border-left: 5px solid var(--primary);
                 border-radius: .5em;
+                transition: background-color .3s ease, color .3s ease;
 
-                h2,
-                p {
-                    color: var(--text-primary);
+                &:hover {
+                    color: var(--text-black);
+                    background-color: var(--bg-muted-transparent);
                 }
+            }
+        }
+
+        section {
+            margin-bottom: 1.5em;
+            padding: 1.5em;
+            background-color: var(--bg-card-transparent);
+            border-radius: 1em;
+            scroll-margin-top: 1em;
+
+            h2 {
+                color: var(--primary-light);
+                margin-bottom: .6em;
+            }
+
+            p {
+                color: var(--text-secondary);
+                line-height: 1.6;
+            }
+        }
+
+        .topo {
+            display: inline-block;
+            margin-top: .5em;
+            padding: .7em 1.2em;
+            color: var(--text-primary);
+            background-color: var(--bg-card);
+            border-radius: .5em;
+            transition: background-color .3s ease, color .3s ease;
+
+            &:hover {
+                color: var(--text-black);
+                background-color: var(--bg-muted-transparent);
             }
         }
     }
@@ -2431,6 +2721,35 @@ color: var(--blue);
                 transform: translateY(-5px);
                 background-color: var(--bg-card-light);
             }
+        }
+    }
+}
+
+#exercise26 {
+    #exemplos {
+        display: none;
+        margin-top: 2em;
+        padding: 1.5em;
+        background-color: var(--bg-card);
+        border-radius: 1em;
+        color: var(--text-primary);
+    }
+
+    #exemplos.mostrar {
+        display: block;
+    }
+
+    #btnExemplos {
+        margin-top: 1em;
+        padding: .8em 1.5em;
+        background-color: var(--blue);
+        color: var(--text-primary);
+        border-radius: .5em;
+        cursor: pointer;
+        transition: .3s ease;
+
+        &:hover {
+            background-color: var(--blue-dark);
         }
     }
 }

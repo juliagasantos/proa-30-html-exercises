@@ -129,7 +129,7 @@ body {
             var(--bg-card-transparent) 50%,
             var(--bg-primary)
         ),
-        url("../assets/img/blue-viper-snake-01.png") center / cover no-repeat fixed;
+        url("../img/blue-viper-snake-01.png") center / cover no-repeat fixed;
 }
 
 .header {
@@ -369,7 +369,7 @@ table {
 
     th {
         padding: 1em;
-        background-color: var(--primary);
+        background-color: var(--shadow-primary-one);
         color: var(--text-primary);
         font-family: "Ubuntu", sans-serif;
         text-align: left;

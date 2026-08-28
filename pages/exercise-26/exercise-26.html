@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Exercises, HTML, PROA">
+    <meta name="description" content="Praticando a sintaxe do CSS">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="author" content="Júlia Galvão Almeida Santos">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index, follow">
+    <meta name="application-name" content="30 html exercises">
+    <title>Exercise 26 - Caça aos Erros de CSS</title>
+    <link rel="shortcut icon" href="../../assets/img/task.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.corrigido.css">
+
+</head>
+
+<body id="exercise26">
+
+    <div class="container">
+
+        <div class="voltar">
+            <a href="../../index.html">Voltar para Home</a>
+        </div>
+
+        <h1>Caça aos Erros de CSS</h1>
+
+        <p>
+            Nesta atividade, foram criados erros propositalmente
+            em um arquivo SCSS para praticar a identificação e
+            correção de problemas de sintaxe.
+        </p>
+
+        <section class="explicacao">
+
+            <h2>O que foi praticado?</h2>
+
+            <ul>
+                <li>Ausência de ponto e vírgula</li>
+                <li>Ausência de chave</li>
+                <li>Propriedade escrita incorretamente</li>
+                <li>Valor inválido</li>
+                <li>Seletor incorreto</li>
+                <li>Erro de sintaxe</li>
+            </ul>
+
+        </section>
+
+        <button id="btnExemplos">
+            Ver exemplos
+        </button>
+
+        <section id="exemplos">
+
+            <h2>Exemplos de erros</h2>
+
+            <div class="erro">
+
+                <h3>Erro 1 — Ausência de ;</h3>
+
+                <pre>
+color: var(--primary-light)
+font-size: 2em;
+                </pre>
+
+                <p>
+                    A propriedade color está sem ponto e vírgula.
+                </p>
+
+            </div>
+
+            <div class="erro">
+
+                <h3>Erro 2 — Propriedade incorreta</h3>
+
+                <pre>
+colr: red;
+                </pre>
+
+                <p>
+                    A propriedade correta é <strong>color</strong>.
+                </p>
+
+            </div>
+
+            <div class="erro">
+
+                <h3>Erro 3 — Valor inválido</h3>
+
+                <pre>
+font-size: grande;
+                </pre>
+
+                <p>
+                    O valor utilizado não é válido para font-size.
+                </p>
+
+            </div>
+
+            <div class="erro">
+
+                <h3>Erro 4 — Seletor incorreto</h3>
+
+                <pre>
+titulo {
+    color: white;
+}
+                </pre>
+
+                <p>
+                    O seletor não corresponde a nenhum elemento
+                    chamado titulo.
+                </p>
+
+            </div>
+
+            <div class="erro">
+
+                <h3>Erro 5 — Chave ausente</h3>
+
+                <pre>
+.card {
+    padding: 1em;
+    color: white;
+                </pre>
+
+                <p>
+                    A chave de fechamento foi esquecida.
+                </p>
+
+            </div>
+
+            <div class="erro">
+
+                <h3>Erro 6 — Unidade inválida</h3>
+
+                <pre>
+margin: 20abc;
+                </pre>
+
+                <p>
+                    A unidade utilizada não existe no CSS.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
