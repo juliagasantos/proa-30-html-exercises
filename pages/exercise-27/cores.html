@@ -1,18 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Exercises, HTML, PROA">
-    <meta name="description" content="Primeiro contato com JavaScript">
+    <meta name="description" content="Exercícios com html">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="author" content="Júlia Galvão Almeida Santos">
     <meta name="generator" content="Visual Studio Code">
     <meta name="robots" content="index, follow">
     <meta name="application-name" content="30 html exercises">
-    <title>Exercise 22</title>
+    <title>Exercise 27</title>
     <link rel="shortcut icon" href="../../assets/img/task.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,45 +23,54 @@
         rel="stylesheet">
 </head>
 
-<body id="exercise22">
+<body id="exercise27">
 
+    
     <div class="container">
 
         <div class="voltar">
             <a href="../../index.html">Voltar para Home</a>
         </div>
 
-        <h1 id="titulo">Primeiro contato com JavaScript</h1>
+        <h1>Cores em CSS</h1>
 
-        <p id="texto">
-            Clique no botão para alterar este texto.
-        </p>
+        <div class="cores">
 
-        <div class="botoes">
-            <button type="button" onclick="alterarTexto()">
-                Clique aqui
-            </button>
+            <div class="cor cor-primary">
+                <p>Nome: Cyan<br>Hexadecimal: #6e77a0</p>
+            </div>
 
-            <button type="button" onclick="alterarNovamente()">
-                Alterar novamente
-            </button>
+            <div class="cor cor-primary-dark">
+                <p>Nome: Light Blue<br>Hexadecimal: #aeb7db</p>
+            </div>
+
+            <div class="cor cor-blue">
+                <p>Nome: Blue<br>RGB: rgb(59, 130, 246)</p>
+            </div>
+
+            <div class="cor cor-purple">
+                <p>Nome: Purple<br>RGB: rgb(167, 139, 250)</p>
+            </div>
+
+            <div class="cor cor-pink">
+                <p>Nome: Pink<br>RGBA: rgba(244, 114, 182, 0.8)</p>
+            </div>
+
+            <div class="cor cor-orange">
+                <p>Nome: Orange<br>Hexadecimal: #fb923c</p>
+            </div>
+
+            <div class="cor cor-yellow">
+                <p>Nome: Yellow<br>RGB: rgb(250, 204, 21)</p>
+            </div>
+
+            <div class="cor cor-red">
+                <p>Nome: Red<br>RGBA: rgba(248, 113, 113, 0.8)</p>
+            </div>
+
         </div>
 
     </div>
-
-    <script>
-        // O JavaScript altera o conteúdo dos elementos da página.
-
-        function alterarTexto() {
-            document.getElementById("texto").textContent =
-                "Oi jaja, um grande abraço da ju";
-        }
-
-        function alterarNovamente() {
-            document.getElementById("texto").textContent =
-                "ACEITO ELOGIOS!!!!!";
-        }
-    </script>
 
 </body>
 

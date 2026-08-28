@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Exercises, HTML, PROA">
-    <meta name="description" content="Primeiro contato com JavaScript">
+    <meta name="description" content="Exercícios com html">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="author" content="Júlia Galvão Almeida Santos">
     <meta name="generator" content="Visual Studio Code">
     <meta name="robots" content="index, follow">
     <meta name="application-name" content="30 html exercises">
-    <title>Exercise 22</title>
+    <title>Exercise 11</title>
     <link rel="shortcut icon" href="../../assets/img/task.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
         rel="stylesheet">
 </head>
 
-<body id="exercise22">
+<body id="exercise11">
 
     <div class="container">
 
@@ -30,37 +30,22 @@
             <a href="../../index.html">Voltar para Home</a>
         </div>
 
-        <h1 id="titulo">Primeiro contato com JavaScript</h1>
+        <h1>Meu pequeno site</h1>
 
-        <p id="texto">
-            Clique no botão para alterar este texto.
-        </p>
+        <img src="./images/logo.png"
+            alt="Logo do site"
+            width="150"
+            height="150">
 
-        <div class="botoes">
-            <button type="button" onclick="alterarTexto()">
-                Clique aqui
-            </button>
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
 
-            <button type="button" onclick="alterarNovamente()">
-                Alterar novamente
-            </button>
-        </div>
+        <p>Bem-vindo ao meu pequeno site criado para praticar caminhos relativos.</p>
 
     </div>
-
-    <script>
-        // O JavaScript altera o conteúdo dos elementos da página.
-
-        function alterarTexto() {
-            document.getElementById("texto").textContent =
-                "Oi jaja, um grande abraço da ju";
-        }
-
-        function alterarNovamente() {
-            document.getElementById("texto").textContent =
-                "ACEITO ELOGIOS!!!!!";
-        }
-    </script>
 
 </body>
 

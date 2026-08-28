@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Exercises, HTML, PROA">
+    <meta name="description" content="Página com diferentes tipos de botões">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="author" content="Júlia Galvão Almeida Santos">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="robots" content="index, follow">
+    <meta name="application-name" content="30 html exercises">
+    <title>Exercise 20</title>
+    <link rel="shortcut icon" href="../../assets/img/task.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="exercise20">
+
+    <div class="container">
+
+        <div class="voltar">
+            <a href="../../index.html">Voltar para Home</a>
+        </div>
+
+        <h1>Página com Botões</h1>
+
+        <div class="action">
+            <h2>Cadastrar</h2>
+            <p>Utilize este botão para cadastrar um novo item.</p>
+            <button type="button" onclick="mostrarMensagem('Cadastro realizado!')">
+                Cadastrar
+            </button>
+        </div>
+
+        <div class="action">
+            <h2>Editar</h2>
+            <p>Utilize este botão para editar um item existente.</p>
+            <button type="button">
+                Editar
+            </button>
+        </div>
+
+        <div class="action">
+            <h2>Excluir</h2>
+            <p>Utilize este botão para excluir um item.</p>
+            <button type="button">
+                Excluir
+            </button>
+        </div>
+
+        <div class="action">
+            <h2>Voltar</h2>
+            <p>Utilize este botão para retornar à página inicial.</p>
+            <button type="button" onclick="window.location.href='../../index.html'">
+                Voltar
+            </button>
+        </div>
+
+        <p id="mensagem"></p>
+
+    </div>
+
+    <script>
+        function mostrarMensagem(mensagem) {
+            document.getElementById("mensagem").textContent = mensagem;
+        }
+    </script>
+
+</body>
+
+</html>
