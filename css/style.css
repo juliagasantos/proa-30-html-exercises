@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 html {
@@ -79,10 +78,10 @@ table {
 
 :root {
     /* Fundos */
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-card: #263449;
-    --bg-card-transparent: #19223080;
+    --bg-primary: #0f242a;
+    --bg-secondary: #1e2d3b;
+    --bg-card: #264149;
+    --bg-card-transparent: #19302f80;
     --bg-muted-transparent: #94a3b8cc;
 
     /* Textos */
@@ -92,9 +91,9 @@ table {
     --text-black: #0f172a;
 
     /* Cores de destaque */
-    --primary: #38bdf8;
-    --primary-dark: #0284c7;
-    --accent: #22d3ee;
+    --primary: #38ebf8;
+    --primary-dark: #02c7c7;
+    --accent: #22eeaa;
 
     /* Bordas */
     --border: #334155;
@@ -103,59 +102,192 @@ table {
     --shadow: rgba(0, 0, 0, 0.3);
 }
 
-
+/* Exercício 01 */
 #home {
     min-height: 100vh;
-    background:
-        linear-gradient(to bottom,
-            var(--bg-primary) 0%,
-            var(--bg-card-transparent) 50%,
-            var(--bg-card-transparent) 50%,
-            var(--bg-primary) 100%),
-        url("../assets/img/blue-viper-snake.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 1em;
     display: flex;
     flex-direction: column;
     gap: 2em;
-.intro-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    h1{
-        text-align: center;
-        font-size: 4em;
-    }
-    .img-intro{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4em;
-        margin-top: 3em;
-        img{
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 2em;
+    font-size: 16px;
+
+    .intro-container {
+        min-height: 100vh;
+        background:
+            linear-gradient(to bottom,
+                var(--bg-primary) 0%,
+                var(--bg-card-transparent) 50%,
+                var(--bg-card-transparent) 50%,
+                var(--bg-primary) 100%),
+            url("../assets/img/blue-viper-snake-01.png");
+        padding: 1em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        h1 {
+            text-align: center;
+            font-size: 4em;
+        }
+
+        .img-intro {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4em;
+            margin-top: 3em;
+
+            img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2em;
+            }
         }
     }
-}
+
     .exercise-container {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
 
         ol {
-             display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
 
 
         }
     }
 }
+
+/* End */
+
+/* Exercício 02 */
+#exercise02 {
+    background: var(--bg-muted-transparent);
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .titlesHtml {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1em;
+        flex-direction: column;
+
+        .voltar {
+            margin: 1em;
+            transition: color .3s ease;
+        }
+
+        .voltar:hover {
+            color: var(--border);
+        }
+
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            li {
+                background-color: var(--text-muted);
+                padding: 1em;
+                border-radius: 1em;
+                cursor: pointer;
+                transition: transform .3s ease, color .3s ease, background-color .3s ease;
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: var(--text-black);
+                }
+            }
+
+            li:hover {
+                transform: scale(1.1);
+                background-color: var(--border);
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: var(--text-primary);
+                }
+
+            }
+        }
+    }
+}
+
+/* End */
+
+
+
+/* Exercício 03 */
+#exercise03 {
+    background: var(--bg-muted-transparent);
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        padding: 2em;
+        background-color: var(--text-secondary);
+        border-radius: 1em;
+
+        .voltar {
+            margin: 1em 1em 2em 0;
+
+            a {
+                color: var(--text-black);
+                transition: color .3s ease;
+            }
+
+            a:hover {
+                color: var(--text-muted);
+            }
+        }
+
+        h1 {
+            color: var(--text-black);
+            font-size: 3em;
+        }
+
+        h2 {
+            color: var(--text-black);
+            margin-top: 1em;
+            margin-bottom: .5em;
+        }
+
+        p {
+            max-width: 800px;
+            line-height: 1.6;
+            margin: 1em 0;
+            color: var(--text-black);
+        }
+
+        hr {
+            width: 100%;
+            margin: 2em 0;
+            border: none;
+            border-top: 1px solid var(--border);
+        }
+    }
+}
+
+/* End */
