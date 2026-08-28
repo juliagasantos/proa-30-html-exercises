@@ -76,11 +76,13 @@ table {
     border-spacing: 0;
 }
 
+/* Paleta de cores */
 :root {
     /* Fundos */
     --bg-primary: #0f242a;
     --bg-secondary: #1e2d3b;
     --bg-card: #264149;
+    --bg-card-light: #365661;
     --bg-card-transparent: #19302f80;
     --bg-muted-transparent: #94a3b8cc;
 
@@ -89,17 +91,42 @@ table {
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
     --text-black: #0f172a;
+    --text-dark: #1e293b;
 
-    /* Cores de destaque */
+    /* Cores principais */
     --primary: #38ebf8;
     --primary-dark: #02c7c7;
+    --primary-light: #7df5ff;
+
+    /* Cores de destaque */
     --accent: #22eeaa;
+    --accent-dark: #0bbf83;
+    --accent-light: #6fffc8;
+
+    /* Cores complementares */
+    --blue: #3b82f6;
+    --blue-dark: #2563eb;
+    --purple: #a78bfa;
+    --pink: #f472b6;
+    --orange: #fb923c;
+    --yellow: #facc15;
+    --red: #f87171;
+
+    /* Cores semânticas */
+    --success: #22c55e;
+    --warning: #eab308;
+    --danger: #ef4444;
+    --info: #38bdf8;
 
     /* Bordas */
     --border: #334155;
+    --border-light: #475569;
+    --border-primary: #38ebf8;
 
     /* Sombras */
     --shadow: rgba(0, 0, 0, 0.3);
+    --shadow-dark: rgba(0, 0, 0, 0.5);
+    --shadow-primary: rgba(56, 235, 248, 0.2);
 }
 
 /* Exercício 01 */
@@ -279,6 +306,265 @@ table {
             line-height: 1.6;
             margin: 1em 0;
             color: var(--text-black);
+        }
+
+        hr {
+            width: 100%;
+            margin: 2em 0;
+            border: none;
+            border-top: 1px solid var(--border);
+        }
+    }
+}
+
+/* End */
+
+
+/* Exercício 04 */
+#exercise04 {
+    background: var(--bg-muted-transparent);
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        padding: 2em;
+        background-color: var(--text-secondary);
+        border-radius: 1em;
+
+        .voltar {
+            margin: 1em 1em 2em 0;
+
+            a {
+                color: var(--text-black);
+                transition: color .3s ease;
+            }
+
+            a:hover {
+                color: var(--text-muted);
+            }
+        }
+
+        h1 {
+            color: var(--text-black);
+            font-size: 3em;
+        }
+
+        h2 {
+            color: var(--text-black);
+            margin-top: 1em;
+            margin-bottom: .5em;
+        }
+
+        p {
+            max-width: 800px;
+            line-height: 1.6;
+            margin: 1em 0;
+            color: var(--text-black);
+        }
+
+        mark {
+            background-color: var(--border);
+            color: var(--text-primary);
+            padding: .1em .3em;
+            border-radius: .2em;
+        }
+
+        del {
+            color: rgb(46, 128, 160);
+        }
+
+        ins {
+            color: rgb(46, 128, 160);
+        }
+
+        small {
+            color: rgb(46, 128, 160);
+        }
+
+        hr {
+            width: 100%;
+            margin: 2em 0;
+            border: none;
+            border-top: 1px solid var(--border);
+        }
+    }
+}
+
+/* End */
+
+
+
+/* Exercício 05 */
+#exercise05 {
+    background: var(--bg-muted-transparent);
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        padding: 2em;
+        background-color: var(--text-secondary);
+        border-radius: 1em;
+
+        .voltar {
+            margin: 1em 1em 2em 0;
+
+            a {
+                color: var(--text-black);
+                transition: color .3s ease;
+            }
+
+            a:hover {
+                color: var(--primary-dark);
+            }
+        }
+
+        h1 {
+            color: var(--text-black);
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            color: var(--text-black);
+            margin-top: 1em;
+            margin-bottom: .5em;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 1em 0;
+            color: var(--text-black);
+        }
+
+        blockquote {
+            margin: 1.5em 0;
+            padding: 1em 1.5em;
+            background-color: var(--bg-card);
+            border-left: 5px solid var(--primary);
+            border-radius: .5em;
+            color: var(--text-primary);
+            font-style: italic;
+            transition: transform .3s ease, background-color .3s ease;
+        }
+
+        blockquote:hover {
+            transform: translateX(5px);
+            background-color: var(--bg-card-light);
+        }
+
+        cite {
+            color: var(--purple);
+            font-style: normal;
+        }
+
+        q {
+            color: var(--bg-card-transparent);
+            font-style: italic;
+        }
+
+        abbr {
+            color: var(--bg-card-light);
+            cursor: help;
+            transition: color .3s ease;
+        }
+
+        abbr:hover {
+            color: var(--purple);
+        }
+
+        hr {
+            width: 100%;
+            margin: 2em 0;
+            border: none;
+            border-top: 1px solid var(--border);
+        }
+    }
+}
+
+/* End */
+
+/* Exercício 06 */
+#exercise06 {
+    background: var(--bg-muted-transparent);
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 100%;
+        margin: 1em;
+        padding: 2em;
+        background-color: var(--text-secondary);
+        border-radius: 1em;
+
+        .voltar {
+            margin: 1em 1em 2em 0;
+
+            a {
+                color: var(--text-black);
+                transition: color .3s ease;
+            }
+
+            a:hover {
+                color: var(--primary-dark);
+            }
+        }
+
+        header {
+            h1 {
+                color: var(--text-black);
+                font-size: 3em;
+                margin-bottom: 1em;
+            }
+
+            p {
+                color: var(--text-black);
+            }
+        }
+
+        main {
+            h2 {
+                color: var(--text-black);
+                margin-top: 1em;
+                margin-bottom: .5em;
+            }
+
+            p {
+                line-height: 1.6;
+                margin: 1em 0;
+                color: var(--text-black);
+            }
+
+            section {
+                padding: 1em;
+                background-color: var(--bg-card);
+                border-radius: .5em;
+
+                h2 {
+                    color: var(--text-primary);
+                }
+
+                p {
+                    color: var(--text-primary);
+                }
+            }
+        }
+
+        footer {
+            p {
+                color: var(--text-black);
+            }
         }
 
         hr {
