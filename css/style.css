@@ -1026,6 +1026,7 @@ table {
 }
 
 /* End */
+
 /* Exercício 09 */
 #exercise09 {
     min-height: 100vh;
@@ -1055,7 +1056,7 @@ table {
 
         .voltar,
         h1,
-        table {
+        .gallery {
             position: relative;
             z-index: 1;
         }
@@ -1079,30 +1080,53 @@ table {
             margin-bottom: 1em;
         }
 
-        table {
-            width: 100%;
-            background-color: var(--bg-card);
-            border-radius: .5em;
-            overflow: hidden;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2em;
 
-            th {
+            figure {
+                margin: 0;
                 padding: 1em;
-                background-color: var(--primary);
-                color: var(--text-black);
-            }
-
-            td {
-                padding: 1em;
-                color: var(--text-primary);
+                background-color: var(--bg-card);
+                border-radius: 1em;
                 border: 1px solid var(--border);
-            }
+                transition: transform .3s ease, background-color .3s ease;
 
-            tr:nth-child(even) {
-                background-color: var(--bg-card-light);
+                &:hover {
+                    transform: translateY(-5px);
+                    background-color: var(--bg-card-light);
+                }
+
+                a {
+                    display: block;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+                        border-radius: .7em;
+                        transition: transform .3s ease, border-color .3s ease;
+
+                        &:hover {
+                            transform: scale(1.01);
+                        }
+                    }
+                }
+
+                figcaption {
+                    margin-top: 1em;
+                    color: var(--text-primary);
+                    line-height: 1.5;
+                    text-align: center;
+                }
             }
         }
     }
 }
+
+/* End */
 
 /* Exercício 10 */
 #exercise10 {
@@ -1133,7 +1157,12 @@ table {
 
         .voltar,
         h1,
-        .cards {
+        h2,
+        p,
+        img,
+        ul,
+        nav,
+        a {
             position: relative;
             z-index: 1;
         }
@@ -1157,29 +1186,75 @@ table {
             margin-bottom: 1em;
         }
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5em;
+        h2 {
+            color: var(--primary-light);
+            margin: 2em 0 .5em;
+        }
 
-            .card {
-                padding: 1.5em;
+        p,
+        li {
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            margin: 1em 0;
+            border-radius: 1em;
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            margin-bottom: 2em;
+
+            a {
+                padding: .7em 1em;
                 background-color: var(--bg-card);
-                border-radius: 1em;
-                border: 1px solid var(--border);
+                color: var(--text-primary);
+                border-radius: .5em;
+                transition: transform .3s ease, background-color .3s ease;
 
-                h2,
-                p {
-                    color: var(--text-primary);
-                }
-
-                h2 {
-                    margin-bottom: .5em;
+                &:hover {
+                    transform: translateY(-3px);
+                    background-color: var(--bg-card-light);
                 }
             }
         }
+
+        ul {
+            padding-left: 2em;
+            margin: 1em 0;
+
+            li {
+                margin: .5em 0;
+
+                a {
+                    color: var(--text-primary);
+                    transition: color .3s ease;
+
+                    &:hover {
+                        color: var(--primary-light);
+                    }
+                }
+            }
+        }
+
+        a.vlt{
+           transition: color .3s ease;
+color: var(--blue);
+           &:hover {
+                    color: var(--bg-muted-transparent);
+                }
+        }
     }
 }
+
+/* End */
 
 /* Exercício 11 */
 #exercise11 {
